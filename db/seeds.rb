@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Post.delete_all
+
+Post.create(:title => 'Hello, World!',
+            :slug => 'hello-world',
+            :content => %{<p>Hello!</p>})
+
