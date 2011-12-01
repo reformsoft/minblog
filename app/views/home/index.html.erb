@@ -1,4 +1,9 @@
-<% @posts.each do |post| %>
-  <%= render :partial => 'shared/show_post', :locals => { :post => post } %>
-<% end  %>
+<div id="main">
+  <div id="header">
+    <h1>Website name</h1>
+  </div>
+  <% @posts.each do |post| %>
+    <%= render :partial => 'shared/show_post', :locals => { :post => post } %>
+  <% end  %>
+</div>
 
