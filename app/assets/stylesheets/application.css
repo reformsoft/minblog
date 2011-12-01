@@ -23,8 +23,14 @@ html, body {
    position: absolute;
    top: 0;
    width: 100%;
+ }
 
-
+ #top-nav a
+ {
+   color: #CCCCCC;
+   line-height:30px;
+   padding-right: 5px;
+   padding-left: 5px;
  }
 
  #header h1 {
@@ -52,10 +58,45 @@ html, body {
 
 }
 
+.post .post-footer
+{
+  color: #999999;
+}
+
 #footer {
   background-color: #2D2D2D;
   color: #CCCCCC;
   padding: 30px 0;
+}
+
+.footer-parts-container
+{
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline; 
+  border: 0 none;
+  display: inline;
+  float: left;
+}
+
+
+#footer #footer-left
+{
+  margin-left: 0;
+  margin-right:10px;  
+}
+
+#footer #footer-mid
+{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#footer #footer-right
+{
+  margin-right: 0;
+  margin-left: 10px;
 }
 
 

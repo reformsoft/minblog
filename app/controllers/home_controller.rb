@@ -3,4 +3,6 @@ class HomeController < ApplicationController
     @posts = Post.all
   end
 
+  def about
+  end
 end
