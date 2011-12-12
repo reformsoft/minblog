@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_filter :check_logged_in
   # GET /posts
   # GET /posts.json
   def index
@@ -78,6 +79,14 @@ class PostsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to posts_url }
       format.json { head :ok }
+    end
+  end
+
+  private 
+
+  def check_logged_in
+    authenticate_or_request_with_http_basic('Posts') do |username, password|
+      username == 'admin' && password == 'test'
     end
   end
 end
