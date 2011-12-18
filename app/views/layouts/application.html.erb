@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Minblog</title>
-    <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag "application" %>
-    <%= csrf_meta_tags %>
-  </head>
-  <body>
-    <div id="top-nav">
+<head>
+  <title>Minblog</title>
+  <%= stylesheet_link_tag "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="top-nav">
+  </div>
+  <div id="main">
+    <div id="header">
+      <h1>deedoubleyou.net<h1>
+      </div>
+      <%= yield %>
+      <div id="footer">
+        <hr />
+      <div id="footer-left">
+        <p>I am a software developer living in Guernsey. I have my own company, 
+          <%= link_to 'Reforsoft', 'http://www.reformsoft.org'%>. 
+          This site is running 
+          <%= link_to 'minblog', 'https://github.com/reformsoft/minblog' %>
+          which we have created as a simple blogging solution.</p>
+      </div>
+      <div id="footer-right">
+        <p><%= link_to 'minblog', 'https://github.com/reformsoft/minblog' %></p>
+      </div>
     </div>
-    <%= yield %>
-  </body>
+  </div>
+</body>
 </html>

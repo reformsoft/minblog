@@ -35,7 +35,7 @@ html, body {
 
  #header h1 {
    font-family:arial;
-   font-size 24px;
+   font-size: 24px;
    text-align:right;
  }
 
@@ -64,39 +64,19 @@ html, body {
 }
 
 #footer {
-  background-color: #2D2D2D;
-  color: #CCCCCC;
   padding: 30px 0;
 }
 
-.footer-parts-container
-{
-  width: 300px;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline; 
-  border: 0 none;
-  display: inline;
-  float: left;
+#footer #footer-left {
+  float:left;
+  text-align:left;
+  width: 50%;
 }
 
-
-#footer #footer-left
-{
-  margin-left: 0;
-  margin-right:10px;  
-}
-
-#footer #footer-mid
-{
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-#footer #footer-right
-{
-  margin-right: 0;
-  margin-left: 10px;
+#footer #footer-right {
+  float:left;
+  text-align:right;
+  width: 50%;
 }
 
 
